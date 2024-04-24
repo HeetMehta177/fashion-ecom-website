@@ -1,0 +1,250 @@
+<!--                                                        online fashion store
+                                                                 BOMAACHI
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomaachi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="stylesheet" href="Assets/bootstrap.css">
+    <script src="https://use.fontawesome.com/dfba0bb4d8.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER NAVBAR -->
+    <section id="header">
+        <a href="index.html"><img src="Assets/bomaachi.avif" class="logo" alt="BOMAACHI"></a>
+        <div>
+            <ul id="navbar">
+                <a href="#" id="close"><i class='fa fa-close'></i></a>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="Assets/shop.html">SHOP</a></li>
+                <li><a href="Assets/blog.html">BLOG</a></li>
+                <li><a href="Assets/about.html">ABOUT</a></li>
+                <li><a href="Assets/contact.html">CONTACT</a></li>
+                <li id="lg-bag"><a href="Assets/cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="Assets/cart.html"> <img src="images/bag-shopping-svgrepo-com.svg" alt="Cart"
+                    style="width: 30px;"></a>
+            <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <div id="page1">
+        <h1>let them judge</h1>
+        <h1>you do you</h1>
+        <div id="video-container">
+            <div id="play">PLAY</div>
+            <video autoplay muted loop src="Assets/video2good.mp4"></video>
+        </div>
+    </div>
+    <hr>
+
+    <!-- NEW ARRIVALS -->
+    <div class="container mt-5">
+        <h2 class="text-center">__ NEW ARRIVALS __</h2>
+
+        <div class="mb-4" id="myBtnContainer">
+            <button class="btn" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('Tshirts')"> T-shirts</button>
+            <button class="btn" onclick="filterSelection('cargos')"> Cargos</button>
+            <button class="btn" onclick="filterSelection('Accessories')"> Accessories</button>
+        </div>
+
+        <div class="row" id="cont">
+            <!-- Portfolio Item 1 -->
+            <div class="col-lg-4 col-md-6  mb-4  column Tshirts">
+                <div class="card">
+                    <img class="card-img-top" src="Assets/images/1.webp" alt="Portfolio Item 1"
+                        onmouseover="this.src='Assets/images/1.1.webp'" onmouseout="this.src='Assets/images/1.webp'">
+                    <div class="caption">
+                        <h4>F THEIR OPINIONS PRINTED NAVY BLUE T-SHIRT</h4>
+                        <p>Rs. 2,980.00/- </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="col-lg-4 col-md-6 mb-4 column Tshirts">
+                <div class="card">
+                    <img class="card-img-top" src="Assets/images/2.webp" alt="Portfolio Item 2"
+                        onmouseover="this.src='Assets/images/2.1.webp'" onmouseout="this.src='Assets/images/2.webp'">
+                    <div class="caption">
+                        <h4>DON'T WORRY PRINTED LILAC T-SHIRT</h4>
+                        <p>Rs. 2,980.00/- </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="col-lg-4 col-md-6 mb-4 column Tshirts">
+                <div class="card">
+                    <img class="card-img-top" src="Assets/images/3.webp" alt="Portfolio Item 3"
+                        onmouseover="this.src='Assets/images/3.1.webp'" onmouseout="this.src='Assets/images/3.webp'">
+                    <div class="caption">
+                        <h4>CHALK BROWN PAISLEY PRINTED T-SHIRT</h4>
+                        <p>Rs. 3,980.00/- </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 4 -->
+            <div class="col-lg-4 col-md-6 mb-4 column Tshirts">
+                <div class="card">
+                    <img class="card-img-top" src="Assets/images/10.webp" alt="Portfolio Item 1"
+                        onmouseover="this.src='Assets/images/10.1.webp'" onmouseout="this.src='Assets/images/10.webp'">
+                    <div class="caption">
+                        <h4>MICROWAVED JOINTS PRINTED COBALT BLUE T-SHIRT</h4>
+                        <p>Rs. 3,980.00/- </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 5 -->
+            <div class="col-lg-4 col-md-6 mb-4 column cargos">
+                <div class="card">
+                    <img class="card-img-top" src="Assets/images/11.webp" alt="Portfolio Item 2"
+                        onmouseover="this.src='Assets/images/11.1.webp'" onmouseout="this.src='Assets/images/11.webp'">
+                    <div class="caption">
+                        <h4>PARACHUTE CARGOS BEIGE</h4>
+                        <p>Rs. 5,680.00/- </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 6 -->
+            <div class="col-lg-4 col-md-6 mb-4 column cargos">
+                <div class="card">
+                    <img class="card-img-top" src="Assets/images/12.webp" alt="Portfolio Item 3"
+                        onmouseover="this.src='Assets/images/12.1.webp'" onmouseout="this.src='Assets/images/12.webp'">
+                    <div class="caption">
+                        <h4>PARACHUTE CARGOS WHITE</h4>
+                        <p>Rs. 5,680.00/- </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- TESTIMONIALS -->
+    <section class=" section__container">
+        <h2>Testimonials</h2>
+        <h1>What our customers say</h1>
+        <div class="section__grid">
+            <div class="section__card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Love the simplicity</h4>
+                <p>
+                    They understood our brand and created a stunning website design.
+                    Professional, responsive, and on-time delivery. Highly recommended!
+                </p>
+                <img src="Assets/images/person1.png" alt="user" />
+                <h5>Allan Collins</h5>
+                <h6>content Creator</h6>
+            </div>
+            <div class="section__card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Excellent Designs</h4>
+                <p>
+                    Efficient, reliable, and results-oriented. Visually appealing
+                    website, improved online visibility. Highly recommended!
+                </p>
+                <img src="Assets/images/person2.png" alt="user" />
+                <h5>Tanya Grant</h5>
+                <h6>Content Creator</h6>
+            </div>
+            <div class="section__card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Efficient and Reliable</h4>
+                <p>
+                    Best decision we made. Stunning website, exceptional support. Always
+                    available and prompt issue resolution. Hassle-free experience!
+                </p>
+                <img src="Assets/images/person 3.png" alt="user" />
+                <h5>Clay Washington</h5>
+                <h6>Fashion Designer</h6>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section__container footer__container">
+        <div class="footer__col">
+            <h4 class="footer__heading">CONTACT INFO</h4>
+            <p>
+                <a
+                    href="https://www.google.com/maps/place/Bomaachi/@23.0339064,72.5050953,17z/data=!3m1!4b1!4m6!3m5!1s0x395e9b56fa75030f:0x65c351266a6c9cb9!8m2!3d23.0339064!4d72.5050953!16s%2Fg%2F11ssjtk41b?hl=en-IN&entry=ttu">
+                    <i class="ri-map-pin-2-fill"></i></a> Bomaachi, Bodakdev, Ahmedabad, Gujarat 380054
+            </p>
+            <p><a href="info@bomaachi.com"><i class="ri-mail-fill"></i></a> info@bomaachi.com</p>
+            <p><i class="ri-phone-fill"></i>+91 9911223344</p>
+        </div>
+        <div class="footer__col">
+            <h4 class="footer__heading">COMPANY</h4>
+            <a href="index.html">
+                <p>Home</p>
+            </a>
+            <a href="Assets/about.html">
+                <p>About Us</p>
+            </a>
+            <a>
+                <p>Work With Us</p>
+            </a>
+            <a href="Assets/blog.html">
+                <p>Our Blog</p>
+            </a>
+        </div>
+        <div class="footer__col">
+            <h4 class="footer__heading">CUSTOMER SUPPORT</h4>
+            <a href="Assets/contact.html">
+                <p>Contact Us</p>
+            </a>
+            <a href="Assets/sizechart.html">
+                <p>Size Chart</p>
+            </a>
+            <a href="Assets/t&c.html">
+                <p>Privacy Policy</p>
+            </a>
+            <a href="Assets/t&c.html">
+                <p>Terms & Conditions</p>
+            </a>
+            <a href="Assets/e&r.html">
+                <p>Exchange & Return Policy</p>
+            </a>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__heading">CONNECT WITH US</h4>
+            <a href="https://www.facebook.com/bomaachi/"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/bomaachi/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/ideas/"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <hr />
+    <!-- INFO -->
+    <div class="section__container footer__bar">
+        <div class="copyright">
+            Copyright © 2022-24 BOMAACHI. All Rights Reserved.
+        </div>
+        <div class="footer__form">
+            <form>
+                <input type="text" placeholder="ENTER YOUR EMAIL" />
+                <button class="btn" type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Assets/script.js"></script>
+    <script src="Assets/bootstrap.js"></script>
+</body>
+
+</html>
